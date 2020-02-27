@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form for Online Store</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div id="formbackground">
+    <h1 id="title">Survey Form for Online Store</h1>
+    <p id="description"> Please let us know how we can improve</p>
+
+    <!-- form box-->
+    <form id="survey-form" method="GET" action="">
+      <div class="container">
+        
+        <!--name entry -->
+        <div class="labels">
+          <label id="name-label" for="name">*Name:</label>
+        </div>
+        <div>
+          <input id="name" class="input-field" type="text" autofocus name="name" required placeholder="Enter your name">
+        </div>
+        
+        <!-- email entry -->
+        <div class="labels">
+          <label id="email-label" for="email">*Email:</label>
+        </div>
+        <div>
+          <input id="email" class="input-field" type="email" name="email" required placeholder="Enter your email">
+        </div>
+
+        <!-- Age entry -->
+        <div class="labels">
+          <label id="number-label" for="age">*Age:</label>
+        </div>
+        <div>
+          <input id="number" class="input-field" type="number" name="age" required placeholder="Enter your age" min=1 max=125>
+        </div>
+
+        <!--Income entry -->
+        <div class="labels">
+          <label id="income-label" for="income">Income:</label>
+        </div>
+        <div>
+          <select class="drop-down input-field" id="dropdown" name="income">
+            <option value="">-- Please choose an income range --</option>
+            <option value="range1">&lt $20,000</option>
+            <option value="range2-4">$20,000 - $39,999</option>
+            <option value="range4-6">$40,000 - $59,999</option>
+            <option value="range6-8">$60,000 - $79,999</option>
+            <option value="range8-10">$80,000 - $99,999</option>
+            <option value="range10">&gt $100,000</option>
+          </select>
+        </div>
+        
+        <!-- gender entry -->
+        <div class="labels">
+          <label id="gender-label" for="gender">Gender:</label>
+        </div>
+        <div>
+          <ul>
+            <li class="list-items"><label><input type="radio" name="gender" value="M"> Male</label>
+            </li>
+            <li class="list-items"><label><input type="radio" name="gender" value="F"> Female</label>
+            </li>
+            <li class="list-items"><label><input type="radio" name="gender" value=" "> Do not wish to disclose</label>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Improvement entry -->
+        <div class="labels">
+          <label id="improve-label" for="improve">Tell us what areas need improvement:</label>
+        </div>
+        <div>
+          <ul>
+            <li class="list-items"><input type="checkbox" name="improve" value="W"> Web Site
+            </li>
+            <li class="list-items"><input type="checkbox" name="improve" value="O"> Online Store
+            </li>
+            <li class="list-items"><input type="checkbox" name="improve" value="P"> Product Inventory
+            </li>
+            <li class="list-items"><input type="checkbox" name="improve" value="C"> Customer Service
+            </li>     
+          </ul>
+        </div>
+        
+        <!-- comments entry -->
+        <div class="labels">
+          <label id="comments-label" for="comments">We would love to hear your comments and/or suggestions:</label>
+        </div>
+        <div>
+          <textarea class="input-field" name="comments" placeholder="Enter your comments here..."></textarea>
+        </div>
+        
+        <!-- Submit button -->
+        <div id="button-row">
+          <button id="submit" type="submit">Submit</button>
+        </div>  
+      </div>
+    </form>
+    <br>
+  </div>
+</body>
+</html>
